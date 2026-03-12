@@ -448,3 +448,6 @@ PRODUCT_PACKAGES += \
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/xiaomi/kunzite/kunzite-vendor.mk)
+
+# Vendor MiuiCamera
+$(call inherit-product-if-exists, device/xiaomi/kunzite-miuicamera/device.mk)
