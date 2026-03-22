@@ -56,6 +56,7 @@ ro.camera.enableCamera1MaxZsl=1
 ro.hardware.camera=xiaomi
 persist.vendor.camera.logLevel=0
 persist.vendor.camera.sensor=0
+vendor.camera.aux.packageexcludelist=com.adobe.scan.android,com.tencent.mm,us.zoom.videomeetings,in.org.npci.upiapp
 
 # Display
 vendor.display.disable_3d_adaptive_tm=1
