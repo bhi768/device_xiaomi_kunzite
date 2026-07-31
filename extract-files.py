@@ -25,6 +25,13 @@ from extract_utils.utils import (
     run_cmd,
 )
 
+from extract_utils.tools import (
+    llvm_objdump_path,
+)
+from extract_utils.utils import (
+    run_cmd,
+)
+
 namespace_imports = [
     'device/xiaomi/kunzite',
     'hardware/xiaomi',
@@ -156,6 +163,13 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_lockPlanes')
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock'),
+    'vendor/lib64/camera/components/com.mi.node.tsskinbeautifier.so': blob_fixup()
+        .call(
+            blob_fixup_graphic_buffer_size,
+            [
+                'ChiNodeEntry',
+            ],
+        ),
     'vendor/lib64/libqcodec2_core.so': blob_fixup()
         .add_needed('libcodec2_shim.so')
         .replace_needed('android.hardware.graphics.common-V5-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
