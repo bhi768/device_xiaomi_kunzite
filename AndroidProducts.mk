@@ -8,4 +8,5 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     infinity_kunzite-userdebug \
-    infinity_kunzite-user
+    infinity_kunzite-user \
+    infinity_kunzite-eng

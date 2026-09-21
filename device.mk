@@ -266,6 +266,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
+#lights
+PRODUCT_PACKAGES += \
+    android.hardware.lights-service.qti
+
 # Properties
 PRODUCT_PACKAGES += \
     kunzite_sku_properties

@@ -248,3 +248,10 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Include the proprietary files BoardConfig.
 include vendor/xiaomi/kunzite/BoardConfigVendor.mk
+
+#power
+# Place this at the very top of BoardConfig.mk
+LOCAL_PATH := $(call my-dir)
+
+# Your existing manifest line should follow below it:
+DEVICE_MANIFEST_FILE += device/xiaomi/kunzite/vintf/power.xml
