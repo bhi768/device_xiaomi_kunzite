@@ -11,12 +11,12 @@ TARGET_SUPPORTS_QUICK_TAP := false
 TARGET_SCREEN_WIDTH := 1080
 
 # Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/custom/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Inherit from kunzite device
 $(call inherit-product, device/xiaomi/kunzite/device.mk)
 
-PRODUCT_NAME := custom_kunzite
+PRODUCT_NAME := infinity_kunzite
 PRODUCT_DEVICE := kunzite
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
@@ -32,3 +32,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Infinity-X Specific Flags
+INFINITY_MAINTAINER := bhi768

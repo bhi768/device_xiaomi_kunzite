@@ -7,6 +7,10 @@ DEVICE_PATH := device/xiaomi/kunzite
 
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/xiaomi
+
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS := \

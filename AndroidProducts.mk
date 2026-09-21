@@ -4,4 +4,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/custom_kunzite.mk
+    $(LOCAL_DIR)/infinity_kunzite.mk
+
+COMMON_LUNCH_CHOICES := \
+    infinity_kunzite-userdebug \
+    infinity_kunzite-user
